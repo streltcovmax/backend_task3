@@ -1,28 +1,28 @@
-    <form action="#">
+    <form action="" method="post">
 
       <label>
           Ваше фио:<br>
-          <input name="field-fio" placeholder="Фамилия Имя Отчество" class="field">
+          <input name="name" placeholder="Фамилия Имя Отчество" class="field">
       </label>
       <label>
           Ваш телефон:<br>
-          <input name="field-tel" type="tel" placeholder="+79123123123" class="field">
+          <input name="number" type="tel" placeholder="+79123123123" class="field">
       </label>
       
       <label>
           Ваш email:<br>
-          <input name="field-email" type="email" placeholder="user@gmail.com" class="field">
+          <input name="email" type="email" placeholder="user@gmail.com" class="field">
       </label>
       
       <label>
           Дата рождения:<br>
-          <input name="field-date" type="date" value="2077-09-22" class="field">
+          <input name="data" type="date" value="2077-09-22" class="field">
       </label>
       
       Пол:
       <br>
           <label>
-              <input type="radio" checked="checked" name="radio" value="Значение1">
+              <input type="radio" name="radio" value="Значение1">
               Мужской
           </label>
           
@@ -33,7 +33,7 @@
       <label>
           Любимый язык программирования:
           <br>
-          <select name="field-multiple" multiple="multiple">
+          <select name="lang[]" multiple="multiple">
               <option value="Значение1">Pascal </option>
               <option value="Значение2">C </option>
               <option value="Значение3">C++ </option>
@@ -50,11 +50,11 @@
       
       <label>
           Биография:<br>
-          <textarea name="field-bio">...</textarea>
+          <textarea name="biography">...</textarea>
       </label>
       
       <label>
-          <input type="checkbox" name="check-1">
+          <input type="checkbox" name="biography">
           с контрактом ознакомлен (а) 
       </label>
       
