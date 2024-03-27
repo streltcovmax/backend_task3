@@ -8,7 +8,7 @@
     <title>Задание 3</title>
   </head>
   <body>
-    
+
 
 <?php
 
@@ -56,7 +56,7 @@ $check_mark = (isset($_POST['check_mark']) ? $_POST['check_mark'] : '');
 
 
 $number = preg_replace('/\D/', '', $number);
-  
+
 $langs = ($lang != '') ? implode(", ", $lang) : [];
 
 val_empty($name, "имя");
@@ -77,7 +77,7 @@ if(strlen($name) > 255){
 }
 elseif(count(explode(" ", $name)) < 2){
   $errors = 'Неверный формат ФИО';
-} 
+}
 elseif(strlen($number) != 11){
   $errors = 'Неверное значение поля "Телефон"';
 }
@@ -146,5 +146,3 @@ catch(PDOException $e){
   print('Error : ' . $e->getMessage());
   exit();
 }
-
-header('Location: ?save=1');
