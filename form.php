@@ -1,4 +1,4 @@
-    <form action="" method="post">
+<form action="" method="post">
 
       <label>
           Ваше фио:<br>
@@ -8,56 +8,59 @@
           Ваш телефон:<br>
           <input name="number" type="tel" placeholder="+79123123123" class="field">
       </label>
-      
+
       <label>
           Ваш email:<br>
           <input name="email" type="email" placeholder="user@gmail.com" class="field">
       </label>
-      
+
       <label>
           Дата рождения:<br>
           <input name="data" type="date" value="2077-09-22" class="field">
       </label>
-      
+
       Пол:
       <br>
           <label>
-              <input type="radio" name="radio" value="Значение1">
+              <input type="radio" name="radio" value="m">
               Мужской
           </label>
-          
+
           <label>
-              <input type="radio" name="radio" value="Значение2">
+              <input type="radio" name="radio" value="f">
               Женский
           </label>
-      <label>
-          Любимый язык программирования:
-          <br>
-          <select name="lang[]" multiple="multiple">
-              <option value="Значение1">Pascal </option>
-              <option value="Значение2">C </option>
-              <option value="Значение3">C++ </option>
-              <option value="Значение4">JavaScript </option>
-              <option value="Значение5">PHP </option>
-              <option value="Значение6">Python </option>
-              <option value="Значение4">Java </option>
-              <option value="Значение5">Haskel </option>
-              <option value="Значение6">Clojure </option>
-              <option value="Значение5">Prolog </option>
-              <option value="Значение6">Scala </option>
-          </select>
-      </label>
-      
+          <div >
+
+          <label class="input">
+            Любимый язык программирования<br />
+            <select  id="lang" class="my-2" name="lang[]" multiple="multiple">
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Scala">Scala</option>
+            </select>
+          </label>
+          </div>
+
       <label>
           Биография:<br>
           <textarea name="biography">...</textarea>
       </label>
-      
-      <label>
-          <input type="checkbox" name="biography">
-          с контрактом ознакомлен (а) 
-      </label>
-      
+
+      <div>
+          <label for="oznakomlen">
+            <input type="checkbox" name="check_mark" id="oznakomlen"/>
+            с контрактом ознакомлен(а)
+          </label>
+        </div>
+
       <input type="submit" value="Отправить">
     </form>
   </body>
